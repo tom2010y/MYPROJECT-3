@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <p>How to declare a array?
+        <h4 id="declaration_of_arrays"></h4></p>
+        <hr>
+        <p>How to fetch the first element of the array
+        <h4 id="acces_first_element"></h4></p>
+        <hr>
+        <p>How to fetch the second element
+        <h4 id="acess_second_element"></h4></p>
+        <hr>
+        <p>How to fetch the third element
+        <h4 id="acess_third_element"></h4></p>
+        <hr>
+        <p>How to get the length of the array?
+        <h4 id="length_of_array"></h4></p>
+        <p>How to loop the array?
+            <h4 id="loop_the_array"></h4></p>
+        <p>How to add element at the end of the array
+            <h4 id="add_element_at_the_end_of_the_array"></h4></p>
+    </body>
+    <script>
+        var fruits=["apple", "mango", "orange"];
+        console.log(fruits);
+
+        document.getElementById("declaration_of_arrays").innerHTML=fruits;
+
+        var first_fruits=fruits[0];
+        console.log(first_fruits);
+        document.getElementById("acces_first_element").innerHTML=first_fruits;
+
+        var second_fruit=fruits[1];
+        console.log(second_fruit);
+        document.getElementById("acess_second_element").innerHTML=second_fruit;
+
+        var third_fruit=fruits[2];
+        console.log(second_fruit);
+        document.getElementById("acess_third_element").innerHTML=third_fruit;
+
+        var length_of_array=fruits.length;
+        console.log(length_of_array);
+        document.getElementById("length_of_array").innerText=length_of_array;
+
+        var array_value="";
+        for (i=0; i<fruits.length; i++){
+            console.log(fruits[i]);
+            array_value = array_value+ fruits[i] + "<br>";
+        }
+        document.getElementById("loop_the_array").innerHTML=array_value;
+        
+        fruits.push("cherry");
+        console.log(fruits)
+        document.getElementById("add_element_at_the_end_of_the_array").innerHTML=fruits
+    </script>
+</html> 
